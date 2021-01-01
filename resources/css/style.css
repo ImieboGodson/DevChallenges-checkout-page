@@ -21,6 +21,10 @@ body {
     padding: 20px;
 }
 
+.form-cart-wrapper {
+    margin-bottom: 80px;
+}
+
 .header h1{
     font-size: 36px;
     line-height: 44px;
@@ -147,6 +151,7 @@ form .top-text {
 }
 
 .quantity {
+    width: 107px;
     padding: 15px 10px;
     display: flex;
     justify-content: space-between;
@@ -155,18 +160,22 @@ form .top-text {
     border-radius: 12px;
 }
 
-input[type='button'] {
+.add-btn, 
+.subtract-btn {
     width: 20px;
     height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 3px 7px; */
     font-size: 20px;
     color: var(--light-grey);
     border: none;
     background-color: #e0e0e0;
     border-radius: 5px;
+}
+
+.qtn-value {
+    color:var(--dark-grey)
 }
 
 .shipping-price,
@@ -182,4 +191,16 @@ input[type='button'] {
     font-size: 18px;
     line-height: 22px;
     color: var(--dark-grey);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
 }
