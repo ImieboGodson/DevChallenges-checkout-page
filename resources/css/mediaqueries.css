@@ -1,0 +1,33 @@
+@media (max-width: 800px) {
+    .input-div {
+        width: 100%;
+    }
+
+    .country-postal-div {
+        width: 100%;
+    }
+
+    .submit-div {
+        width: 100%;
+    }
+
+    .cart {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .cart-col {
+        order: 1;
+    }
+
+    .form-col {
+        order: 2;
+    }
+}
