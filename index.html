@@ -33,11 +33,134 @@
       href="resources/css/style.css"
     />
 
-    <title>Interior Consultant</title>
+    <link 
+      rel="stylesheet" 
+      href="resources/css/utilities.css"
+    />
+
+    <link 
+      rel="stylesheet" 
+      href="resources/css/mediaqueries.css"
+    />
+
+    <title>Checkout Page</title>
 
     
   </head>
   <body>
    
+    <div class="checkout-page container">
+      <div class="header flex my-4">
+        <h1>Checkout</h1>
+      </div>
+      <div class="grid">
+        <div class="form-col">
+          <form action="" method="get">
+            <h2 class="header-text top-text">Contact information</h2>
+            <label for="email">E-mail</label>
+            <div class="input-div flex">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+            </div>
+            <label for="phone">Phone</label>
+            <div class="input-div phone-input-div flex">
+              <i class="fas fa-phone-alt"></i>
+              <input type="number" name="phone" id="phone" placeholder="Enter your phone..." required>
+            </div>
+            <h2 class="header-text my-2">Shopping address</h2>
+            <label for="fullname">Full name</label>
+            <div class="input-div flex">
+              <i class="fas fa-user-circle"></i>
+              <input type="text" name="fullname" id="fullname" placeholder="Your full name..." required>
+            </div>
+            <label for="address">Address</label>
+            <div class="input-div flex">
+              <i class="fas fa-home"></i>
+              <input type="text" name="address" id="address" placeholder="Your address..." required>
+            </div>
+            <label for="city">City</label>
+            <div class="input-div flex">
+              <i class="fas fa-city"></i>
+              <input type="text" name="city" id="city" placeholder="Your city..." required>
+            </div>
+            <div class="country-postal-div">
+              <div class="country">
+                <label for="country">Country</label>
+                <div class="input-div flex">
+                  <i class="fas fa-globe-africa"></i>
+                  <select name="country" id="country" placeholder="Your country...">
+                    <option value="usa">Australia</option>
+                    <option value="usa">Brazil</option>
+                    <option value="usa">China</option>
+                    <option value="usa">Nigeria</option>
+                  </select>
+                </div>
+              </div>
+              <div class="postal-code">
+                <label for="postalcode">Postal code</label>
+                <div class="input-div flex">
+                  <i class="fas fa-mail-bulk"></i>
+                  <input type="number" name="postalcode" id="postalcode" placeholder="Your postal code..." required>
+                </div>
+              </div>
+            </div>
+            <div class="option-to-save flex">
+              <input type="checkbox" name="saveinfo" id="saveinfo">
+              <p>Save this information for next time</p>
+            </div>
+            <div class="submit-div my-2">
+              <input type="submit" id="submit-btn" value="Continue">
+            </div>
+          </form>
+        </div>
+        <div class="cart-col">
+          <div class="cart">
+            <div class="item">
+              <img src="/resources/images/photo1.png" alt="" class="item-image">
+              <div class="description">
+                <div class="name-price">
+                  <h2>Vintage Backbag</h2>
+                  <div class="price">
+                    <p class="discount-price">$54.99</p>
+                    <p class="original-price">$94.99</p>
+                  </div>
+                </div>
+                <div class="quantity">
+                  <input type="button" value="-">
+                  <p class="qtn-value">1</p>
+                  <input type="button" value="+">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="/resources/images/photo2.png" alt="" class="item-image">
+              <div class="description">
+                <div class="name-price">
+                  <h2>Vintage Backbag</h2>
+                  <div class="price">
+                    <p class="discount-price">$54.99</p>
+                    <p class="original-price">$94.99</p>
+                  </div>
+                </div>
+                <div class="quantity">
+                  <input type="button" value="-">
+                  <p class="qtn-value">1</p>
+                  <input type="button" value="+">
+                </div>
+              </div>
+            </div>
+            <div class="shipping-price py-1">
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+            <div class="total-price py-1">
+              <p>Total</p>
+              <p>$148.98</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
