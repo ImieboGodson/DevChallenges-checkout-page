@@ -1,16 +1,7 @@
 @media (max-width: 800px) {
-    .input-div {
-        width: 100%;
-    }
-
-    .country-postal-div {
-        width: 100%;
-    }
-
-    .submit-div {
-        width: 100%;
-    }
-
+    .input-div,
+    .country-postal-div,
+    .submit-div,
     .cart {
         width: 100%;
     }
@@ -29,5 +20,26 @@
 
     .form-col {
         order: 2;
+    }
+    
+    .item {
+        height: 120px;
+    }
+
+    .item-image {
+        width: 45%;
+    }
+
+    .shipping-price p,
+    .total-price p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .name-price h2,
+    .name-price .original-price,
+    .name-price .discount-price {
+        font-size: 12px;
+        line-height: 15px;
     }
 }
