@@ -161,7 +161,7 @@ form .top-text {
 }
 
 .add-btn, 
-.subtract-btn {
+.minus-btn {
     width: 20px;
     height: 20px;
     display: flex;
