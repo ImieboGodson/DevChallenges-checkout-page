@@ -178,12 +178,16 @@ form .top-text {
     color:var(--dark-grey)
 }
 
+.shipping-price {
+    margin-top: 100px;
+}
+
 .shipping-price,
 .total-price {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #bbddbb;
+    border-top: 1px solid #bdbdbd;
 }
 
 .shipping-price p,
