@@ -1,55 +1,85 @@
-let discountedPrice1 = document.getElementsByClassName('discount-price')[0].innerHTML = '$' + 54.99;
-let discountedPrice2 = document.getElementsByClassName('discount-price')[1].innerHTML = '$' + 74.99;
-let productQuantity = 1;
-const addButton1 = document.getElementsByClassName('add-btn')[0];
-const addButton2 = document.getElementsByClassName('add-btn')[1];
-const minusButton1 = document.getElementsByClassName('minus-btn')[0];
-const minusButton2 = document.getElementsByClassName('minus-btn')[1];
+let discountedPrices = document.querySelectorAll('.discount-price');
+let productQuantities = document.querySelectorAll('.qtn-value');
+const addButtons = document.querySelectorAll('.add-btn');
+const minusButtons = document.querySelectorAll('.minus-btn');
 let totalPrice = document.getElementsByClassName('total');
 
 
-
-// const increaseFunction = () => {
-//     discountedPrice = discountedPrice + 74.99;
-//     return document.getElementsByClassName('discount-price')[1].innerHTML = '$'+ discountedPrice;
-// }
-
-// const decreaseFunction = () => {
-//     if (productQuantity > 1) {
-//         discountedPrice = discountedPrice - 74.99;
-//     } else {
-//         discountedPrice = 74.99
-//     }
-
-//     return document.getElementsByClassName('discount-price')[1].innerHTML = '$'+ discountedPrice;
-// }
+productQuantities.forEach(pq => pq.innerHTML = 1);
 
 
-
-const addFunction = () => {
-    productQuantity = productQuantity + 1;
-    // increaseFunction();
-    document.getElementById('qtn-value').innerHTML = productQuantity 
+function addFunction () {
+    console.log(this);
+    let title = this.getAttribute('title');
+    let addBtn = document.querySelector(`.add-btn[title='${title}']`);
+    let productQuantity = document.querySelector(`.qtn-value[title='${title}']`).innerHTML;
+    
+    productQuantity ++;
+    
+    document.querySelector(`.qtn-value[title='${title}']`).innerHTML = productQuantity;
 }
 
-const minusFunction = () => {
+function minusFunction() {
+    console.log(this);
+    let title = this.getAttribute('title');
+    let minusBtn = document.querySelector(`.minus-btn[title='${title}']`);
+    let productQuantity = document.querySelector(`.qtn-value[title='${title}']`).innerHTML;
+    let discountedPrice = document.querySelector(`.discount-price[title='${title}']`);
+
     if (productQuantity > 1) {
         productQuantity -= 1;
-        // decreaseFunction();
     } else {
         productQuantity = 1;
-        // decreaseFunction();
     }
 
 
-    document.getElementById('qtn-value').innerHTML = productQuantity
-
-    // decreaseFunction();
-
+    document.querySelector(`.qtn-value[title='${title}']`).innerHTML = productQuantity;
 }
 
-addButton1.addEventListener('click', addFunction);
-addButton2.addEventListener('click', addFunction);
+addButtons.forEach(addBtn => addBtn.addEventListener('click', addFunction));
 
-minusButton1.addEventListener('click', minusFunction);
-minusButton2.addEventListener('click', minusFunction);
+minusButtons.forEach(minusBtn => minusBtn.addEventListener('click', minusFunction));
+
+
+
+// Arrray
+// const numbers = ['cero', 'uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'seite'];
+
+// console.log(Array.isArray(numbers));
+
+// numbers.shift();
+// numbers.unshift('cero');
+// numbers.pop();
+// numbers.push('seite');
+
+// console.log(numbers.indexOf('seis'));
+
+// console.log(numbers);
+
+
+
+// const todos = [
+//     {
+//         id: 1,
+//         text: 'Create folder',
+//         isComplete: false
+//     },
+//     {
+//         id: 2,
+//         text: 'Create plac',
+//         isComplete: true
+//     },
+//     {
+//         id: 3,
+//         text: 'Create design',
+//         isComplete: false
+//     }
+// ]
+
+// const toJson = JSON.stringify(todos);
+
+// console.log('JSON:', toJson)
+
+// const back2array = JSON.parse(toJson)
+
+// console.log('Array:', back2array)
