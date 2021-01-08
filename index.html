@@ -55,7 +55,11 @@
       </div>
       <div class="form-cart-wrapper grid">
         <div class="form-col">
-          <form action="" method="get">
+          <form name="checkout" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <h2 class="header-text top-text">Contact information</h2>
             <label for="email">E-mail</label>
             <div class="input-div flex">
