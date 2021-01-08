@@ -17,7 +17,7 @@
       Solution
     </a>
     <span> | </span>
-    <a href="#">
+    <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO">
       Challenge
     </a>
   </h3>
@@ -44,7 +44,7 @@
 ![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png) -->
 
 
- This project took a while to complete more because of the occurrences around me during the building, and also because i had to learn DOM (Document Object Model) Manipulation all over again. It was ultimately fun, learnt a ton of new stuff around DOM and its overall effect web apps on a larger scale (Given that a complete page reload is done everytime an interaction occurs on the page due to DOM Manipulation, your goal as a developer is to minimise amount of DOM Manipulation happening...in comes React and the rest)
+ This project took a while to complete more because of the occurrences around me while building, and also because I had to learn DOM (Document Object Model) Manipulation all over again. It was ultimately fun, learnt a ton of new stuff around DOM and its overall effect web apps on a larger scale (Given that a complete page reload is done everytime an interaction occurs on the page due to DOM Manipulation, your goal as a developer is to minimise amount of DOM Manipulation happens in your app...in comes React and the rest)
 
  As in the previous challenges, I decided to account for other screen sizes apart from the required mobile phone and desktop views.
 
@@ -62,14 +62,13 @@ You can checkout the [demo](https://el-checkout-page.netlify.app/).
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This simple page was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [Checkout Page](--) was to build an application to complete the given user stories.
+This simple page was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [Checkout Page Challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
 
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
 
 ## Contact
