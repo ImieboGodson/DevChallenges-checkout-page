@@ -2,53 +2,74 @@ let discountedPrices = document.querySelectorAll('.d-price');
 let productQuantities = document.querySelectorAll('.qtn-value');
 const addButtons = document.querySelectorAll('.add-btn');
 const minusButtons = document.querySelectorAll('.minus-btn');
-let totalPrice = document.querySelector('.total');
+let totalPrice = document.querySelector('.total').innerText = 148.98;
 
-discountedPrices[0].innerHTML = 54.99;
-discountedPrices[1].innerHTML = 74.99;
 
-productQuantities.forEach(pq => pq.innerHTML = 1);
+document.querySelector('.d-price[title=item1]').innerText = 54.99;
+document.querySelector('.d-price[title=item2]').innerText = 74.99;
+
+let initialPrice1 = 54.99;
+let initialPrice2 = 74.99;
+
+productQuantities.forEach(pq => pq.innerText = 1);
+
+// function totalFunction () {
+//     let itemPrice1 = document.querySelector('.d-price[title=item1]').innerText;
+//     let itemPrice2 = document.querySelector('.d-price[title=item2]').innerText;
+    
+//     document.querySelector('.total').innerText = itemPrice1 + itemPrice2;
+
+//     console.log(itemPrice2);
+// }
 
 
 function addFunction () {
-    console.log(this);
     let title = this.getAttribute('title');
-    let addBtn = document.querySelector(`.add-btn[title='${title}']`);
-    let productQuantity = document.querySelector(`.qtn-value[title='${title}']`).innerHTML;
-    let discountedPrice = document.querySelector(`.d-price[title='${title}']`).innerHTML;
-
+    let productQuantity = document.querySelector(`.qtn-value[title='${title}']`).innerText;
+    let discountedPrice = document.querySelector(`.d-price[title='${title}']`).innerText;
 
     productQuantity ++;
 
-    
+    document.querySelector(`.qtn-value[title='${title}']`).innerText = productQuantity;
 
-    document.querySelector(`.qtn-value[title='${title}']`).innerHTML = productQuantity;
 
-    // discountedPrices.forEach(dp => dp.innerHTML * 2);
-    // discountedPrice += discountedPrice;
+    if (title === 'item1') {
+        discountedPrice = initialPrice1 * productQuantity
+    } else if(title === 'item2') {
+        discountedPrice = initialPrice2 * productQuantity
+    }
 
-    console.log(discountedPrice); 
-    // 19,613
+    console.log(discountedPrice);
 
-    document.querySelector(`.d-price[title='${title}']`).innerHTML = discountedPrice
+    document.querySelector(`.d-price[title='${title}']`).innerText = discountedPrice.toFixed(2)
+
+    // totalFunction ();
     
 }
 
 function minusFunction() {
-    console.log(this);
     let title = this.getAttribute('title');
-    let minusBtn = document.querySelector(`.minus-btn[title='${title}']`);
-    let productQuantity = document.querySelector(`.qtn-value[title='${title}']`).innerHTML;
+    let productQuantity = document.querySelector(`.qtn-value[title='${title}']`).innerText;
     let discountedPrice = document.querySelector(`.d-price[title='${title}']`);
 
     if (productQuantity > 1) {
         productQuantity -= 1;
-    } else {
+    } else if (productQuantity === 1){
         productQuantity = 1;
     }
 
 
-    document.querySelector(`.qtn-value[title='${title}']`).innerHTML = productQuantity;
+    document.querySelector(`.qtn-value[title='${title}']`).innerText = productQuantity;
+
+    if (title === 'item1') {
+        discountedPrice = initialPrice1 * productQuantity;
+    } else if (title === 'item2') {
+        discountedPrice = initialPrice2 * productQuantity;
+    }
+
+    document.querySelector(`.d-price[title='${title}']`).innerText = discountedPrice.toFixed(2);
+
+    // totalFunction ();
 }
 
 addButtons.forEach(addBtn => addBtn.addEventListener('click', addFunction));
