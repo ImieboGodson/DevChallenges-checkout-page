@@ -66,7 +66,7 @@ This simple page was created as a submission to a [DevChallenges](https://devcha
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
 - [Converting strings to numbers with vanilla JavaScript](https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript/)
-- [Setting up forms](https://docs.netlify.com/forms/setup/)
+- [Setting up forms with Netlify](https://docs.netlify.com/forms/setup/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
 
 ## Contact
