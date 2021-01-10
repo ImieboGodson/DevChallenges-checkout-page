@@ -37,11 +37,7 @@
 
 ## Overview
 
-<!-- ![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
-
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
-
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png) -->
+<!-- ![screenshot]() -->
 
 
  This project took a while to complete more because of the occurrences around me while building, and also because I had to learn DOM (Document Object Model) Manipulation all over again. It was ultimately fun, learnt a ton of new stuff around DOM and its overall effect on web apps on a larger scale (Given that DOM is rebuilt from ground up everytime an interaction occurs on the page due to DOM Manipulation, your goal as a developer is to minimise the amount of DOM Manipulation that happens in your app...in comes React and the rest)
@@ -69,6 +65,8 @@ This simple page was created as a submission to a [DevChallenges](https://devcha
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
+- [Converting strings to numbers with vanilla JavaScript](https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript/)
+- [Setting up forms](https://docs.netlify.com/forms/setup/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
 
 ## Contact
