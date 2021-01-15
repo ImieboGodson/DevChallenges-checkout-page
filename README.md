@@ -73,5 +73,5 @@ This simple page was created as a submission to a [DevChallenges](https://devcha
 
 Any feedback is always welcome, if you feel there's somewhere/something I should have done better you can always reach out through my handles below. I am ALWAYS ready to learn and grow. You can also follow me to see my adventures through time ;).
 
-- GitHub [@ImieboGodson](https://{github.com/ImieboGodson})
-- Twitter [@ImieboGodson](https://{twitter.com/ImieboGodson})
+- GitHub [@ImieboGodson](https://github.com/ImieboGodson)
+- Twitter [@ImieboGodson](https://twitter.com/GodsonImiebo)
